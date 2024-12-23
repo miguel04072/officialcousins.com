@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cousins Offical Music</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="Cousins Offical Music Website">Cousins Offical Music Website</div>
+        <nav>
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Cousins</h1>
+        <p>Music tracks available on Facebook, YouTube, and Instagram</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Cousins' Goal</h2>
+        <p>Our goal is to create a perfect listening environment for every believer who knows the beauty of God's music. We also provide available tracks to help listeners easily find us on social media and international accessibility.</p>
+    </section>
+    
+    <section id="about">
+        <h2>Cousins' Vision</h2>
+        <p>Our vision is to see younger generations praise God through heavenly and spiritual music.</p>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos">
+        <h2>October 30, 2024</h2>
+        <div class="video-gallery">
+            <iframe src="https://www.youtube.com/embed/0vOrMiZKmuk?si=uVo6N5xI9C6ijkap" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section id="videos">
+        <h2>October 27, 2024</h2>
+        <div class="video-gallery">
+            <iframe src="https://www.youtube.com/embed/bnlgYTPhRTs?si=qk-KcvAgV7BE_qba" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Facebook Videos Section -->
+    <section id="facebook-videos">
+        <h2>Watch Our Facebook Videos</h2>
+        <div class="video-container">
+            <!-- First Facebook Video -->
+            <div class="fb-video" data-href="https://www.facebook.com/100063665155117/videos/1420819658835201" data-width="250" data-show-text="false">
+                <blockquote cite="https://www.facebook.com/100063665155117/videos/1420819658835201" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/100063665155117/videos/1420819658835201">Facebook Video 1</a>
+                </blockquote>
+            </div>
+            
+            <!-- Second Facebook Video -->
+            <div class="fb-video" data-href="https://fb.watch/wEZmlV9QqO/" data-width="250" data-show-text="false">
+                <blockquote cite="https://fb.watch/wEZmlV9QqO/" class="fb-xfbml-parse-ignore">
+                    <a href="https://fb.watch/wEZmlV9QqO/">Facebook Video 2</a>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="socials">
+            <h3>Follow Us on Social Media:</h3>
+            <a href="https://www.facebook.com/profile.php?id=100063665155117&mibextid=ZbWKwL" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/csns.2020" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/@cousinsofficial24" target="_blank">YouTube</a>
+        </div>
+        <p>Email: <a href="mailto:cousins.official.net@gmail.com">cousins.official.net@gmail.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Cousins Official. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Thank You Message
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Create Thank You Message
+            const form = document.getElementById("contact-form");
+            const thankYouMessage = document.createElement("div");
+            thankYouMessage.innerHTML = `
+                <h3>Thank you for reaching out to us!</h3>
+                <p>We appreciate your message and will get back to you shortly.</p>
+            `;
+            thankYouMessage.style.textAlign = "center";
+            thankYouMessage.style.marginTop = "20px";
+
+            // Replace the form with the Thank You message
+            form.parentNode.replaceChild(thankYouMessage, form);
+        });
+    </script>
+</body>
+</html>

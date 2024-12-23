@@ -1,0 +1,239 @@
+/* General Body Styling */
+body {
+    font-family: 'Georgia', serif; /* Classic serif font for vintage feel */
+    margin: 0;
+    padding: 0;
+    color: #3E2A47; /* Dark brown text color */
+    background-color: #ffffff; /* White background */
+    background-attachment: fixed;
+}  
+
+/* Header */
+header {
+    background-color: #d4b17f; /* Light brown background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    font-family: 'Georgia', serif;
+}
+
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: #000000; /* Black color for the logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #ffffff; /* Light brown color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #000000; /* Vintage hover effect */
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #805110; /* Dark brown color for text */
+    text-shadow: none; /* Removed yellow shadow */
+    font-family: 'Georgia', serif;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff; /* White background */
+    color: #b17910; /* Light brown text */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+}
+
+/* Music Section */
+#music {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f4e3; /* Very light brown background */
+}
+
+.music-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.music-card {
+    background-color: #4E2A84; /* Dark purple background for music cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.music-card h3 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    color: #ffd700; /* Gold color */
+}
+
+button {
+    background-color: #ffd700; /* Gold button */
+    color: #4E2A84; /* Dark purple text */
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px; /* Increased font size */
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #4E2A84; /* Dark purple on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Videos Section */
+#videos {
+    background-color: #ffffff; /* White background */
+    color: #36321a; /* Dark brown text */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#videos iframe {
+    border: 5px solid #5e4306; /* Dark brown border */
+    border-radius: 10px;
+    max-width: 100%;
+    height: 170px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Facebook Videos Section */
+#facebook-videos {
+    text-align: center;
+    margin-top: 40px; /* Adds space above the video section */
+}
+
+/* Container for the two videos */
+.video-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Space out the videos evenly */
+    gap: 20px; /* Space between the two videos */
+    flex-wrap: wrap; /* Allow videos to stack on small screens */
+}
+
+/* Individual Facebook Video Styling */
+.fb-video {
+    width: 48%; /* Set the width to 48% to make them side by side */
+    max-width: 48%; /* Ensure max-width is set to 48% */
+    border-radius: 10px; /* Add rounded corners */
+    padding-bottom: 5px;
+    overflow: hidden; /* Ensure content does not overflow from the rounded corners */
+}
+
+/* Heading Styling */
+#facebook-videos h2 {
+    font-family: 'Georgia', serif;
+    color: #805110; /* Dark brown for the title */
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Optional: Make the videos responsive on smaller screens */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Stack videos vertically on small screens */
+        gap: 15px; /* Less space between stacked videos */
+    }
+
+    .fb-video {
+        width: 100%; /* Make each video full-width on mobile */
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+    -webkit-text-fill-color: #000000; /* Black text for inputs */
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #7b6025; /* Light brown border */
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact button {
+    padding: 15px;
+    font-size: 18px;
+    background-color:  #936529; /* Dark brown footer */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #ffffff;
+    color: #825f2a; /* Brown text on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #936529; /* Dark brown footer */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
+ 
+footer a {
+    color: #875b21; /* Gold for footer links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
